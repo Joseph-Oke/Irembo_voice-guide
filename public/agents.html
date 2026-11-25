@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agents - Irembo Voice Guide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="agents">
+
+<header class="navbar">
+  <h1>Irembo Voice Guide</h1>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="guide.html">Guide</a>
+    <a href="steps.html">Steps</a>
+    <a href="agents.html">Agents</a>
+    <a href="activity.html">Activity</a>
+  </nav>
+</header>
+
+<section class="page">
+  <div class="big-card">
+    <h2>Irembo Agents</h2>
+    <p class="muted">Administrator only. Only verified agents are sent to users who are stuck twice (FR 3.2).</p>
+    <div class="form-row">
+      <label>Name<input id="a-name"></label>
+      <label>Phone<input id="a-phone"></label>
+      <label>District<select id="a-district"></select></label>
+      <label class="check"><input id="a-verified" type="checkbox"> Verified</label>
+      <button id="a-add">Add agent</button>
+    </div>
+    <div class="table-wrap"><table id="agents-table"><thead><tr><th>Name</th><th>Phone</th><th>District</th><th>Verified</th><th></th></tr></thead><tbody></tbody></table></div>
+    <h3 class="gap">Escalations</h3>
+    <div class="table-wrap"><table id="esc-table"><thead><tr><th>When</th><th>Agent sent</th><th>Status</th><th></th></tr></thead><tbody></tbody></table></div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
